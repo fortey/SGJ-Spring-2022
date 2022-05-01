@@ -17,7 +17,13 @@ public class BorderCheck : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(_borderTag))
+        {
             onBorderEnter.Invoke();
+            if (transform.position.x > other.transform.position.x)
+                CameraFollow.instance.MoveRight();
+            else
+                CameraFollow.instance.MoveLeft();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)

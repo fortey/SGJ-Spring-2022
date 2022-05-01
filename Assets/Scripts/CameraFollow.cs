@@ -4,9 +4,14 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour
 {
+    public static CameraFollow instance;
     public float offsetX = 0.2f;
     private CinemachineFramingTransposer _transposer;
 
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         var vcam = GetComponent<CinemachineVirtualCamera>();
