@@ -60,7 +60,7 @@ public class Dialogue : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && _gameObject.activeSelf)
         {
             if (_textComponent.text == _speech.lines[_index])
             {
