@@ -8,8 +8,13 @@ public class Mover : MonoBehaviour
     private bool _isFlip;
     private bool _canMove = true;
 
+    private Animator _animator;
+    private readonly int _animIsWalking = Animator.StringToHash("isWalking");
+
     void Start()
     {
+        _animator = GetComponent<Animator>();
+
         var borderCheck = GetComponentInChildren<BorderCheck>();
         borderCheck.onBorderEnter += () => _canMove = false;
         borderCheck.onBorderExit += () => _canMove = true;
@@ -28,6 +33,7 @@ public class Mover : MonoBehaviour
                 transform.position = transform.position + new Vector3(horizontal * _speed * Time.deltaTime, 0f, 0f);
         }
 
+        _animator.SetBool(_animIsWalking, _canMove && horizontal != 0f);
     }
 
     private void Flip()
