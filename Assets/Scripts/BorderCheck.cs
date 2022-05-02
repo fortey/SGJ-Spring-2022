@@ -20,7 +20,9 @@ public class BorderCheck : MonoBehaviour
         {
             onBorderEnter.Invoke();
             if (transform.position.x > other.transform.position.x)
-                CameraFollow.instance.MoveRight();
+            {
+                Scenario.instance.OnComeHome();
+            }
             else
                 CameraFollow.instance.MoveLeft();
         }

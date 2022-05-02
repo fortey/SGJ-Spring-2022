@@ -49,7 +49,7 @@ public class Mover : MonoBehaviour
         _animator.SetBool(_animIsWalking, _canMove && !_inDialogue && horizontal != 0f);
     }
 
-    private void Flip()
+    public void Flip()
     {
         _isFlip = !_isFlip;
         var localScale = transform.localScale;
