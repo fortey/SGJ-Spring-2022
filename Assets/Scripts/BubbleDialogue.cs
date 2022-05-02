@@ -17,6 +17,10 @@ public class BubbleDialogue : MonoBehaviour
 
     private bool _inProgress;
 
+    public void StartDialogue(float time)
+    {
+        Invoke(nameof(StartDialogue), time);
+    }
     public void StartDialogue()
     {
         _inProgress = true;
@@ -48,6 +52,7 @@ public class BubbleDialogue : MonoBehaviour
             _inProgress = false;
             onDialogueEnd?.Invoke();
             _bubble.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 

@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
         _trashBag.SetActive(false);
         CurrentAction = null;
         _animator.SetBool(_animTrash, false);
+        Scenario.instance.FinishTrashEvent();
     }
 
     private void Update()
