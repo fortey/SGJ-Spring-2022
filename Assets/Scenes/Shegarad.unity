@@ -3058,6 +3058,7 @@ MonoBehaviour:
   text: {fileID: 0}
   key: 0
   player: {fileID: 0}
+  stage: 0
 --- !u!50 &992195564
 Rigidbody2D:
   serializedVersion: 4
@@ -3855,7 +3856,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0422\u0443\u0442 \u0442\u0435\u043A\u0441\u0442"
+  m_Text: 
 --- !u!222 &1192311451
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4601,6 +4602,7 @@ MonoBehaviour:
   text: {fileID: 1192311450}
   key: 0
   player: {fileID: 1870994537}
+  stage: 0
 --- !u!61 &1698496884
 BoxCollider2D:
   m_ObjectHideFlags: 0

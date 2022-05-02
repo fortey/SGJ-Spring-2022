@@ -76,6 +76,7 @@ public class Take_the_trash : MonoBehaviour
                 Diolog.text = ("¬роде не чего не забыл");
                 end = true;
                 text.text = ("");
+                Global.Event_trash = false;
             }
 
         }

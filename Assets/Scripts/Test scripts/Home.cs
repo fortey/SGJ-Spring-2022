@@ -8,6 +8,7 @@ public class Home : MonoBehaviour
     [SerializeField] Text text;
     public bool key;
     public Animator player;
+    public int stage;
 
     private void OnTriggerEnter2D(Collider2D Event)
     {
@@ -16,13 +17,24 @@ public class Home : MonoBehaviour
             Global.Stop = true;
             if (Global.Event_trash == true)
             {
-                text.text = ("ÍÀÆÌÈÒÅ 'E' ×ÒÎ ÁÛ ÂÇßÒÜ ÌÓÑÎĞ");
-                if (key == true)
+                if (stage == 1)
                 {
-                    player.SetBool("trash", true);
-                    key = false;
+                    text.text = ("ß óæå âçÿë ìóñîğ");
                 }
+            }
+            if (stage == 0)
+            {
+                if (Global.Event_trash == true)
+                {
+                    text.text = ("ÍÀÆÌÈÒÅ 'E' ×ÒÎ ÁÛ ÂÇßÒÜ ÌÓÑÎĞ");
+                    if (key == true)
+                    {
+                        player.SetBool("trash", true);
+                        key = false;
+                        stage = 1;
+                    }
 
+                }
             }
         }
     }
@@ -41,6 +53,8 @@ public class Home : MonoBehaviour
         {
             key = true;
         }
+        
+        
         
         
     }
