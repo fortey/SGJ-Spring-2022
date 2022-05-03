@@ -80,7 +80,11 @@ public class BubbleDialogue : MonoBehaviour
             onDialogueEnd?.Invoke();
             _bubble.gameObject.SetActive(false);
             if (_donnotDisable)
+            {
                 Destroy(GetComponent<BoxCollider2D>());
+
+            }
+
             else
                 gameObject.SetActive(false);
         }
