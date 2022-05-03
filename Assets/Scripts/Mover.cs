@@ -56,12 +56,12 @@ public class Mover : MonoBehaviour
         transform.localScale = new Vector3(localScale.x * -1, localScale.y, localScale.z);
     }
 
-    private void SetInDialogue()
+    public void SetInDialogue()
     {
         _inDialogue = true;
     }
 
-    private void SetNotInDialogue()
+    public void SetNotInDialogue()
     {
         _inDialogue = false;
     }
