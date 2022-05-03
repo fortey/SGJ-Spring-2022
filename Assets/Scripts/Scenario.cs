@@ -21,6 +21,9 @@ public class Scenario : MonoBehaviour
 
     [Header("BusStop")]
     [SerializeField] private BubbleDialogue[] _busStopEvents;
+    [Header("")]
+    [SerializeField] private BubbleDialogue[] _carEvents;
+
     private bool _rememberedTrash;
     private bool _isTrashEventCompled;
     private bool _shopVisited;
@@ -62,6 +65,7 @@ public class Scenario : MonoBehaviour
         ActivateNextDialogue(_cronesSpeeches);
         ActivateNextDialogue(_shopSpeeches);
         ActivateNextDialogue(_busStopEvents);
+        ActivateNextDialogue(_carEvents);
 
         if (_forgotBatteries.gameObject.activeSelf) _forgotBatteries.StartDialogue();
     }
@@ -71,6 +75,7 @@ public class Scenario : MonoBehaviour
         CameraFollow.instance.MoveLeft();
         _shopVisited = true;
         ActivateNextDialogue(_busStopEvents);
+        ActivateNextDialogue(_carEvents);
     }
 
     private void ActivateNextDialogue(BubbleDialogue[] dialogues)
