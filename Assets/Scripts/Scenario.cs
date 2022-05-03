@@ -12,6 +12,8 @@ public class Scenario : MonoBehaviour
     [SerializeField] private BubbleDialogue _speechForTrashEvent;
     [SerializeField] private BubbleDialogue _speechForTrashEvent2;
 
+    [Header("Crones")]
+    [SerializeField] private BubbleDialogue[] _cronesSpeeches;
     private bool _rememberedTrash;
     private bool _isTrashEventCompled;
 
@@ -29,6 +31,30 @@ public class Scenario : MonoBehaviour
         {
             _blackout.Play(GiveTrashBag);
             CameraFollow.instance.MoveRight();
+            AfterComeHome();
+            return;
+        }
+        if (_isTrashEventCompled)
+        {
+            AfterComeHome();
+            return;
+        }
+    }
+
+    private void AfterComeHome()
+    {
+        ActivateNextDialogue(_cronesSpeeches);
+    }
+
+    private void ActivateNextDialogue(BubbleDialogue[] dialogues)
+    {
+        foreach (var dialogue in dialogues)
+        {
+            if (!dialogue.IsCompleted)
+            {
+                dialogue.gameObject.SetActive(true);
+                break;
+            }
         }
     }
 

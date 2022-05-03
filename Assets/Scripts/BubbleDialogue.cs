@@ -8,6 +8,9 @@ public class BubbleDialogue : MonoBehaviour
 {
     public event Action onDialogueStart;
     public event Action onDialogueEnd;
+
+    public bool stopPlayer;
+    public bool IsCompleted { get; private set; }
     [SerializeField] private Bubble _bubble;
     [SerializeField] private Text _textComponent;
     [SerializeField] private SpeechLine[] _lines;
@@ -17,6 +20,15 @@ public class BubbleDialogue : MonoBehaviour
 
     private bool _inProgress;
 
+    private void Start()
+    {
+        if (stopPlayer)
+        {
+            var mover = FindObjectOfType<Mover>();
+            onDialogueStart += mover.SetInDialogue;
+            onDialogueEnd += mover.SetNotInDialogue;
+        }
+    }
     public void StartDialogue(float time)
     {
         Invoke(nameof(StartDialogue), time);
@@ -50,6 +62,7 @@ public class BubbleDialogue : MonoBehaviour
         else
         {
             _inProgress = false;
+            IsCompleted = true;
             onDialogueEnd?.Invoke();
             _bubble.gameObject.SetActive(false);
             gameObject.SetActive(false);
