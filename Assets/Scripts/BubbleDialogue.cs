@@ -17,6 +17,10 @@ public class BubbleDialogue : MonoBehaviour
     private int _index;
     [SerializeField] private float _textSpeed;
 
+    [SerializeField] private SpriteRenderer _renderer;
+    [SerializeField] private Sprite _sprite;
+    [SerializeField] private Animator _animator;
+    private int _animatorParameter = Animator.StringToHash("Count");
 
     private bool _inProgress;
 
@@ -29,6 +33,14 @@ public class BubbleDialogue : MonoBehaviour
             onDialogueEnd += mover.SetNotInDialogue;
         }
     }
+
+    private void OnEnable()
+    {
+        if (_renderer && _sprite)
+            _renderer.sprite = _sprite;
+        if (_animator)
+            _animator.SetInteger(_animatorParameter, _animator.GetInteger(_animatorParameter) + 1);
+    }
     public void StartDialogue(float time)
     {
         Invoke(nameof(StartDialogue), time);
@@ -37,10 +49,11 @@ public class BubbleDialogue : MonoBehaviour
     {
         _inProgress = true;
         _bubble.gameObject.SetActive(true);
-        _index = 0;
-        TypeLine();
+        _index = -1;
+        NextLine();
 
         onDialogueStart?.Invoke();
+
     }
 
     private void TypeLine()
