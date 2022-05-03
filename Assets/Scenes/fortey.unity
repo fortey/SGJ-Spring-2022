@@ -403,6 +403,7 @@ Transform:
   - {fileID: 1023522973}
   - {fileID: 1348593691}
   - {fileID: 252775762}
+  - {fileID: 1441445281}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -958,7 +959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &174839181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1168,7 +1169,7 @@ GameObject:
   - component: {fileID: 252775762}
   - component: {fileID: 252775763}
   m_Layer: 0
-  m_Name: "\u0431\u0430\u0431\u043A\u0438_(1)"
+  m_Name: "\u0431\u0430\u0431\u043A\u0438"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1184,7 +1185,11 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 29.41, y: -3.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 391782006}
+  - {fileID: 655075368}
+  - {fileID: 1126177603}
+  - {fileID: 1179190256}
   m_Father: {fileID: 24492040}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1540,13 +1545,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391782005}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.29, y: -3.95, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.119999, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1179217533}
-  m_Father: {fileID: 1482284759}
-  m_RootOrder: 2
+  m_Father: {fileID: 252775762}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &391782007
 MonoBehaviour:
@@ -1565,6 +1570,7 @@ MonoBehaviour:
   _textComponent: {fileID: 1867247689}
   _lines:
   - bubbleSpot: {fileID: 688794070}
+    clip: {fileID: 8300000, guid: 7c4ef8113b0815642997a6b6a672e808, type: 3}
     line: "\u0411\u0430\u0431\u043A\u0438 \u0438\u0437 \u0411\u0440\u0430\u0442\u0441\u0442\u0432\u0430
       \u0421\u0442\u0430\u043B\u0438! \n\u0410 \u044F \u0437\u0430\u0431\u044B\u043B
       \u0443\u0434\u043E\u0441\u0442\u043E\u0432\u0435\u0440\u0435\u043D\u0438\u0435!
@@ -1919,17 +1925,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594791030}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.04, y: -2.82, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.31000012, y: -1.0566666, z: 0}
+  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 1}
   m_Children:
   - {fileID: 2089215234}
   - {fileID: 756648734}
   - {fileID: 1039614545}
   - {fileID: 1829447410}
   - {fileID: 1531953024}
-  m_Father: {fileID: 1482284759}
-  m_RootOrder: 6
+  m_Father: {fileID: 1348593691}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &607341534
 GameObject:
@@ -2253,13 +2259,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655075367}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.1, y: -3.95, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.30999947, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 631626441}
-  m_Father: {fileID: 1482284759}
-  m_RootOrder: 3
+  m_Father: {fileID: 252775762}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &655075369
 MonoBehaviour:
@@ -2278,8 +2284,10 @@ MonoBehaviour:
   _textComponent: {fileID: 1867247689}
   _lines:
   - bubbleSpot: {fileID: 631626441}
+    clip: {fileID: 8300000, guid: a84b8146ef1426e469cff7129173e287, type: 3}
     line: "\u0425\u043E\u0434\u044E\u0442 \u0442\u0443\u0442 \u0432\u0441\u044F\u043A\u0438\u0435!"
   - bubbleSpot: {fileID: 631626441}
+    clip: {fileID: 8300000, guid: 309425d1ff097ff409b528ae15dd0ead, type: 3}
     line: "\u0410 \u043F\u043E\u0442\u043E\u043C \u0431\u0430\u0442\u0430\u0440\u0435\u0439\u043A\u0438
       \u043F\u0440\u043E\u043F\u0430\u0434\u0430\u044E\u0442!"
   _textSpeed: 2
@@ -2463,7 +2471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688794069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.58, y: 1.54, z: 0}
+  m_LocalPosition: {x: 0, y: 1.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1870994535}
@@ -2713,11 +2721,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734343647}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.4, y: -3.9, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6500006, y: -0.6500001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1482284759}
+  m_Father: {fileID: 804313340}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &734343649
@@ -2737,9 +2745,11 @@ MonoBehaviour:
   _textComponent: {fileID: 1867247689}
   _lines:
   - bubbleSpot: {fileID: 688794070}
+    clip: {fileID: 8300000, guid: 7c4ef8113b0815642997a6b6a672e808, type: 3}
     line: "\u0417\u0438\u043C\u043E\u0439 \u043F\u043E\u043C\u043E\u0439\u043A\u0430
       \u043F\u043E\u0447\u0442\u0438 \u043D\u0435 \u0432\u043E\u043D\u044F\u0435\u0442\u2026"
   - bubbleSpot: {fileID: 688794070}
+    clip: {fileID: 8300000, guid: 59d97db57e6bf1646ab2a97c7791593f, type: 3}
     line: "\u0427\u0451\u0440\u0442! \u041C\u0443\u0441\u043E\u0440 \u0437\u0430\u0431\u044B\u043B!"
   _textSpeed: 2
 --- !u!61 &734343650
@@ -2868,9 +2878,11 @@ MonoBehaviour:
   _textComponent: {fileID: 1867247689}
   _lines:
   - bubbleSpot: {fileID: 2089215234}
+    clip: {fileID: 8300000, guid: 3279809632e368a4eb786ca021239e11, type: 3}
     line: "\u0414\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C. \u0412\u0430\u0448
       VR-\u043A\u043E\u0434?"
   - bubbleSpot: {fileID: 688794070}
+    clip: {fileID: 8300000, guid: 50bc838197793a447a3bbe6c7f0b5373, type: 3}
     line: "\u0418 \u043F\u043E\u0447\u0435\u043C\u0443 \u0438\u0445 \u0435\u0449\u0451
       \u043D\u0435 \u043E\u0442\u043C\u0435\u043D\u0438\u043B\u0438\u2026"
   _textSpeed: 2
@@ -3022,7 +3034,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12.05, y: -3.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 734343648}
+  - {fileID: 1754796886}
   m_Father: {fileID: 24492040}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3145,6 +3159,147 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &855240870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 855240871}
+  - component: {fileID: 855240873}
+  - component: {fileID: 855240872}
+  m_Layer: 0
+  m_Name: SoundPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &855240871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855240870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 860600629}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &855240872
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855240870}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.738
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &855240873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855240870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3c9fe21d6526b45a09a70e877a1bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
 --- !u!1 &860600626
 GameObject:
   m_ObjectHideFlags: 0
@@ -3230,6 +3385,7 @@ Transform:
   - {fileID: 1256074922}
   - {fileID: 652321592}
   - {fileID: 2103799955}
+  - {fileID: 855240871}
   m_Father: {fileID: 851318788}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3760,11 +3916,13 @@ MonoBehaviour:
   _textComponent: {fileID: 1867247689}
   _lines:
   - bubbleSpot: {fileID: 2089215234}
+    clip: {fileID: 8300000, guid: 3279809632e368a4eb786ca021239e11, type: 3}
     line: "\u0421 \u0432\u0430\u0441 \u0441\u0442\u043E \u0432\u043E\u0441\u0435\u043C\u044C
       \u043A\u0440\u044B\u0448\u0435\u0447\u0435\u043A."
   - bubbleSpot: {fileID: 688794070}
+    clip: {fileID: 8300000, guid: 7c4ef8113b0815642997a6b6a672e808, type: 3}
     line: "\u042F \u043E\u0441\u0442\u0430\u0432\u0438\u043B \u043A\u0440\u044B\u0448\u0435\u0447\u043A\u0438
-      \u0432 \u0434\u0440\u0443\u0433\u043E\u043C \u043F\u0443\u0445\u043E\u0432\u0438\u043A\u0435!
+      \n\u0432 \u0434\u0440\u0443\u0433\u043E\u043C \u043F\u0443\u0445\u043E\u0432\u0438\u043A\u0435!
       \n\u0421\u0435\u0439\u0447\u0430\u0441 \u0432\u0435\u0440\u043D\u0443\u0441\u044C!"
   _textSpeed: 2
 --- !u!61 &1039614547
@@ -4110,13 +4268,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126177602}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.1, y: -3.95, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.30999947, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 431073444}
-  m_Father: {fileID: 1482284759}
-  m_RootOrder: 4
+  m_Father: {fileID: 252775762}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1126177604
 MonoBehaviour:
@@ -4135,17 +4293,21 @@ MonoBehaviour:
   _textComponent: {fileID: 1867247689}
   _lines:
   - bubbleSpot: {fileID: 431073444}
+    clip: {fileID: 8300000, guid: 309425d1ff097ff409b528ae15dd0ead, type: 3}
     line: "\u0418\u0448\u044C! \u0420\u0430\u0441\u0445\u043E\u0434\u0438\u043B\u0441\u044F
       \u0442\u0443\u0442!\n\u0422\u0443\u043D\u0435\u044F\u0434\u0435\u0446, \u043D\u0435\u0431\u043E\u0441\u044C!"
   - bubbleSpot: {fileID: 431073444}
+    clip: {fileID: 8300000, guid: acaae65152e93d343a53928bd99e3cd5, type: 3}
     line: "\u0410 \u0441 \u0442\u0443\u043D\u0435\u044F\u0434\u0446\u0430\u043C\u0438
       \u0443 \u043D\u0430\u0441\n\u0440\u0430\u0437\u0433\u043E\u0432\u043E\u0440
       \u043A\u043E\u0440\u043E\u0442\u043A\u0438\u0439!"
   - bubbleSpot: {fileID: 431073444}
+    clip: {fileID: 8300000, guid: 51562c465bc4e2c4890e8519494ee470, type: 3}
     line: "\u041C\u0435\u0440\u044B \u043A \u0430\u043D\u0442\u0438\u0440\u0430\u0431\u043E\u0447\u0438\u043C
       \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430\u043C \n\u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0435\u043C
       \u0431\u044B\u0441\u0442\u0440\u043E!"
   - bubbleSpot: {fileID: 688794070}
+    clip: {fileID: 8300000, guid: 59d97db57e6bf1646ab2a97c7791593f, type: 3}
     line: "\u041D\u0435-\u043D\u0435, \u0431\u0430\u0431\u0443\u043B\u044C! \u042F
       \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0449\u0438\u0439! \n\u0412\u043E\u0442
       \u0443\u0434\u043E\u0441\u0442\u043E\u0432\u0435\u0440\u0435\u043D\u0438\u0435!"
@@ -4604,13 +4766,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179190255}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.1, y: -3.95, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.30999947, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1151972119}
-  m_Father: {fileID: 1482284759}
-  m_RootOrder: 5
+  m_Father: {fileID: 252775762}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1179190257
 MonoBehaviour:
@@ -4629,11 +4791,13 @@ MonoBehaviour:
   _textComponent: {fileID: 1867247689}
   _lines:
   - bubbleSpot: {fileID: 1151972119}
+    clip: {fileID: 8300000, guid: acaae65152e93d343a53928bd99e3cd5, type: 3}
     line: "\u0412 \u044D\u0442\u043E\u0439 \u043F\u043B\u0430\u0441\u0442\u0438\u043A\u043E\u0432\u043E\u0439
       \u0448\u0430\u0443\u0440\u043C\u0435 \n\u0441\u043B\u0438\u0448\u043A\u043E\u043C
       \u043C\u043D\u043E\u0433\u043E \u0447\u0438\u043F\u043E\u0432. \n\u0410 \u0432\u043E\u0442
       \u0440\u0430\u043D\u044C\u0448\u0435\u2026"
   - bubbleSpot: {fileID: 1151972119}
+    clip: {fileID: 8300000, guid: 309425d1ff097ff409b528ae15dd0ead, type: 3}
     line: "\u042D\u0445, \u0434\u0430\u2026 \u0432 \u043C\u043E\u0451 \u0432\u0440\u0435\u043C\u044F
       \u0432 \u0448\u0430\u0443\u0440\u043C\u0443 \n\u0441\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u043B\u0438
       \u041D\u0410\u0421\u0422\u041E\u042F\u0429\u0415\u0415 \u043C\u044F\u0441\u043E!"
@@ -4868,7 +5032,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 66.97, y: 0.35, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 594791031}
   m_Father: {fileID: 24492040}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5186,6 +5351,88 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1441445280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441445281}
+  - component: {fileID: 1441445282}
+  m_Layer: 0
+  m_Name: "\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430_(1)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1441445281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441445280}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 39.87, y: -2.58, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 24492040}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1441445282
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441445280}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1144648119
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 778059fe174a61d4b8a6beeb9c7d2e16, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.99, y: 3.78}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1443816812
 GameObject:
   m_ObjectHideFlags: 0
@@ -5343,14 +5590,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 734343648}
-  - {fileID: 1754796886}
-  - {fileID: 391782006}
-  - {fileID: 655075368}
-  - {fileID: 1126177603}
-  - {fileID: 1179190256}
-  - {fileID: 594791031}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5552,6 +5792,7 @@ MonoBehaviour:
   _textComponent: {fileID: 1867247689}
   _lines:
   - bubbleSpot: {fileID: 688794070}
+    clip: {fileID: 8300000, guid: 50bc838197793a447a3bbe6c7f0b5373, type: 3}
     line: "\u0412\u0441\u0451 \u043A\u0443\u043F\u0438\u043B, \u043A\u0440\u043E\u043C\u0435
       \u0441\u0430\u043C\u043E\u0433\u043E \u0433\u043B\u0430\u0432\u043D\u043E\u0433\u043E!"
   _textSpeed: 2
@@ -5816,11 +6057,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754796885}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.4, y: -3.9, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6500006, y: -0.6500001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1482284759}
+  m_Father: {fileID: 804313340}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1754796887
@@ -5840,6 +6081,7 @@ MonoBehaviour:
   _textComponent: {fileID: 1867247689}
   _lines:
   - bubbleSpot: {fileID: 688794070}
+    clip: {fileID: 8300000, guid: 7c4ef8113b0815642997a6b6a672e808, type: 3}
     line: "\u0424\u0444\u0435\u0435, \u043F\u043B\u0430\u0441\u0442\u0438\u043A\u043E\u0432\u043E\u0435
       \u043C\u044F\u0441\u043E \u0443\u0436\u0430\u0441\u043D\u043E."
   _textSpeed: 2
@@ -6084,13 +6326,16 @@ MonoBehaviour:
   _textComponent: {fileID: 1867247689}
   _lines:
   - bubbleSpot: {fileID: 2089215234}
+    clip: {fileID: 8300000, guid: 662134e5a2d1e7d4f86968c68e106659, type: 3}
     line: "\u041C\u044B \u043D\u0435 \u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0435\u043C
       \u043F\u0443\u0433\u043E\u0432\u043A\u0438\n\u0432\u043C\u0435\u0441\u0442\u043E
       \u043A\u0440\u044B\u0448\u0435\u0447\u0435\u043A!"
   - bubbleSpot: {fileID: 688794070}
+    clip: {fileID: 8300000, guid: 50bc838197793a447a3bbe6c7f0b5373, type: 3}
     line: "\u041E\u0439\u2026\u043D\u0430\u0432\u0435\u0440\u043D\u043E\u0435 \u044D\u0442\u043E
       \u0434\u043E\u0447\u043A\u0430 \n\u043F\u043E\u0434\u043B\u043E\u0436\u0438\u043B\u0430!"
   - bubbleSpot: {fileID: 2089215234}
+    clip: {fileID: 8300000, guid: 4ce8e4f9f767f644ea6125735c12dd8a, type: 3}
     line: "\u042F \u043E\u0441\u0442\u0430\u0432\u043B\u044E \u0432\u0430\u0448\u0438
       \u0442\u043E\u0432\u0430\u0440\u044B \n\u0432\u043E\u0437\u043B\u0435 \u043A\u0430\u0441\u0441\u044B.
       \u0412\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0439\u0442\u0435\u0441\u044C

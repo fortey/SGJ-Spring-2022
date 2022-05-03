@@ -51,8 +51,8 @@ public class Scenario : MonoBehaviour
         if (_isTrashEventCompled && _shopVisited)
         {
             _shopVisited = false;
-            AfterComeHome();
-            if (_forgotBatteries.gameObject.activeSelf) _forgotBatteries.StartDialogue();
+            _blackout.Play(AfterComeHome);
+
             return;
         }
     }
@@ -62,6 +62,8 @@ public class Scenario : MonoBehaviour
         CameraFollow.instance.MoveRight();
         ActivateNextDialogue(_cronesSpeeches);
         ActivateNextDialogue(_shopSpeeches);
+
+        if (_forgotBatteries.gameObject.activeSelf) _forgotBatteries.StartDialogue();
     }
 
     private void ActivateNextDialogue(BubbleDialogue[] dialogues)
