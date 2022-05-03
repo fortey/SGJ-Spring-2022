@@ -1716,6 +1716,11 @@ MonoBehaviour:
   - {fileID: 655075369}
   - {fileID: 1126177604}
   - {fileID: 1179190257}
+  _shopSpeeches:
+  - {fileID: 756648735}
+  - {fileID: 1039614546}
+  - {fileID: 1829447411}
+  _forgotBatteries: {fileID: 1531953025}
 --- !u!4 &471552189
 Transform:
   m_ObjectHideFlags: 0
@@ -1891,6 +1896,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &594791030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 594791031}
+  m_Layer: 0
+  m_Name: Shop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &594791031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594791030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 66.04, y: -2.82, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2089215234}
+  - {fileID: 756648734}
+  - {fileID: 1039614545}
+  - {fileID: 1829447410}
+  - {fileID: 1531953024}
+  m_Father: {fileID: 1482284759}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &607341534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,7 +2449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 688794070}
   m_Layer: 0
-  m_Name: BubbleSpot
+  m_Name: Player BubbleSpot
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2779,6 +2819,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &756648733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 756648734}
+  - component: {fileID: 756648736}
+  - component: {fileID: 756648735}
+  m_Layer: 0
+  m_Name: Shop (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &756648734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756648733}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.61, y: -0.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 594791031}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &756648735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756648733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3338fc49f0cb28b4db74ac219e7e7b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPlayer: 1
+  _bubble: {fileID: 170031684}
+  _textComponent: {fileID: 1867247689}
+  _lines:
+  - bubbleSpot: {fileID: 2089215234}
+    line: "\u0414\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C. \u0412\u0430\u0448
+      VR-\u043A\u043E\u0434?"
+  - bubbleSpot: {fileID: 688794070}
+    line: "\u0418 \u043F\u043E\u0447\u0435\u043C\u0443 \u0438\u0445 \u0435\u0449\u0451
+      \u043D\u0435 \u043E\u0442\u043C\u0435\u043D\u0438\u043B\u0438\u2026"
+  _textSpeed: 2
+--- !u!61 &756648736
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756648733}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.27402496}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5560493, y: 2.2178884}
+  m_EdgeRadius: 0
 --- !u!1 &804313337
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,6 +3711,88 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1039614544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039614545}
+  - component: {fileID: 1039614547}
+  - component: {fileID: 1039614546}
+  m_Layer: 0
+  m_Name: Shop (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1039614545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039614544}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.6100001, y: -0.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 594791031}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1039614546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039614544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3338fc49f0cb28b4db74ac219e7e7b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPlayer: 1
+  _bubble: {fileID: 170031684}
+  _textComponent: {fileID: 1867247689}
+  _lines:
+  - bubbleSpot: {fileID: 2089215234}
+    line: "\u0421 \u0432\u0430\u0441 \u0441\u0442\u043E \u0432\u043E\u0441\u0435\u043C\u044C
+      \u043A\u0440\u044B\u0448\u0435\u0447\u0435\u043A."
+  - bubbleSpot: {fileID: 688794070}
+    line: "\u042F \u043E\u0441\u0442\u0430\u0432\u0438\u043B \u043A\u0440\u044B\u0448\u0435\u0447\u043A\u0438
+      \u0432 \u0434\u0440\u0443\u0433\u043E\u043C \u043F\u0443\u0445\u043E\u0432\u0438\u043A\u0435!
+      \n\u0421\u0435\u0439\u0447\u0430\u0441 \u0432\u0435\u0440\u043D\u0443\u0441\u044C!"
+  _textSpeed: 2
+--- !u!61 &1039614547
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039614544}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.27402496}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5560493, y: 2.2178884}
+  m_EdgeRadius: 0
 --- !u!1 &1052708920
 GameObject:
   m_ObjectHideFlags: 0
@@ -4050,7 +4253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141842841}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.31, y: 0.1024, z: 0}
+  m_LocalPosition: {x: 57.68, y: 0.1024, z: 0}
   m_LocalScale: {x: 1, y: 9.879524, z: 1}
   m_Children: []
   m_Father: {fileID: 1771386755}
@@ -5147,6 +5350,7 @@ Transform:
   - {fileID: 655075368}
   - {fileID: 1126177603}
   - {fileID: 1179190256}
+  - {fileID: 594791031}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5300,6 +5504,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1531953023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531953024}
+  - component: {fileID: 1531953025}
+  m_Layer: 0
+  m_Name: Forgot batteries
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1531953024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531953023}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.6100006, y: -0.80999994, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 594791031}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1531953025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531953023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3338fc49f0cb28b4db74ac219e7e7b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPlayer: 0
+  _bubble: {fileID: 170031684}
+  _textComponent: {fileID: 1867247689}
+  _lines:
+  - bubbleSpot: {fileID: 688794070}
+    line: "\u0412\u0441\u0451 \u043A\u0443\u043F\u0438\u043B, \u043A\u0440\u043E\u043C\u0435
+      \u0441\u0430\u043C\u043E\u0433\u043E \u0433\u043B\u0430\u0432\u043D\u043E\u0433\u043E!"
+  _textSpeed: 2
 --- !u!1 &1547236623
 GameObject:
   m_ObjectHideFlags: 0
@@ -5780,6 +6035,93 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1829447409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1829447410}
+  - component: {fileID: 1829447412}
+  - component: {fileID: 1829447411}
+  m_Layer: 0
+  m_Name: Shop (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1829447410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829447409}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.6100001, y: -0.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 594791031}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1829447411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829447409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3338fc49f0cb28b4db74ac219e7e7b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPlayer: 1
+  _bubble: {fileID: 170031684}
+  _textComponent: {fileID: 1867247689}
+  _lines:
+  - bubbleSpot: {fileID: 2089215234}
+    line: "\u041C\u044B \u043D\u0435 \u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0435\u043C
+      \u043F\u0443\u0433\u043E\u0432\u043A\u0438\n\u0432\u043C\u0435\u0441\u0442\u043E
+      \u043A\u0440\u044B\u0448\u0435\u0447\u0435\u043A!"
+  - bubbleSpot: {fileID: 688794070}
+    line: "\u041E\u0439\u2026\u043D\u0430\u0432\u0435\u0440\u043D\u043E\u0435 \u044D\u0442\u043E
+      \u0434\u043E\u0447\u043A\u0430 \n\u043F\u043E\u0434\u043B\u043E\u0436\u0438\u043B\u0430!"
+  - bubbleSpot: {fileID: 2089215234}
+    line: "\u042F \u043E\u0441\u0442\u0430\u0432\u043B\u044E \u0432\u0430\u0448\u0438
+      \u0442\u043E\u0432\u0430\u0440\u044B \n\u0432\u043E\u0437\u043B\u0435 \u043A\u0430\u0441\u0441\u044B.
+      \u0412\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0439\u0442\u0435\u0441\u044C
+      \n\u0441 \u0434\u0435\u043D\u044C\u0433\u0430\u043C\u0438."
+  _textSpeed: 2
+--- !u!61 &1829447412
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829447409}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.27402496}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5560493, y: 2.2178884}
+  m_EdgeRadius: 0
 --- !u!1 &1867247686
 GameObject:
   m_ObjectHideFlags: 0
@@ -6457,6 +6799,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060824808}
   m_CullTransparentMesh: 1
+--- !u!1 &2089215233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2089215234}
+  m_Layer: 0
+  m_Name: Shop bubble spot
+  m_TagString: Untagged
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2089215234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089215233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.62, y: 0.57, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 594791031}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2103799954
 GameObject:
   m_ObjectHideFlags: 0

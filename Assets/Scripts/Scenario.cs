@@ -14,8 +14,13 @@ public class Scenario : MonoBehaviour
 
     [Header("Crones")]
     [SerializeField] private BubbleDialogue[] _cronesSpeeches;
+
+    [Header("Shop")]
+    [SerializeField] private BubbleDialogue[] _shopSpeeches;
+    [SerializeField] private BubbleDialogue _forgotBatteries;
     private bool _rememberedTrash;
     private bool _isTrashEventCompled;
+    private bool _shopVisited;
 
     private void Awake()
     {
@@ -24,26 +29,39 @@ public class Scenario : MonoBehaviour
     private void Start()
     {
         StartTrashEvent();
+        foreach (var speech in _shopSpeeches)
+        {
+            speech.onDialogueEnd += () =>
+            {
+                CameraFollow.instance.MoveLeft();
+                _shopVisited = true;
+            };
+        }
+        _shopSpeeches[2].onDialogueEnd += () => _forgotBatteries.gameObject.SetActive(true);
     }
     public void OnComeHome()
     {
         if (_rememberedTrash && !_isTrashEventCompled && !_player.IsTrashOnHand)
         {
             _blackout.Play(GiveTrashBag);
-            CameraFollow.instance.MoveRight();
+
             AfterComeHome();
             return;
         }
-        if (_isTrashEventCompled)
+        if (_isTrashEventCompled && _shopVisited)
         {
+            _shopVisited = false;
             AfterComeHome();
+            if (_forgotBatteries.gameObject.activeSelf) _forgotBatteries.StartDialogue();
             return;
         }
     }
 
     private void AfterComeHome()
     {
+        CameraFollow.instance.MoveRight();
         ActivateNextDialogue(_cronesSpeeches);
+        ActivateNextDialogue(_shopSpeeches);
     }
 
     private void ActivateNextDialogue(BubbleDialogue[] dialogues)
