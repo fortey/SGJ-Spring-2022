@@ -20,6 +20,7 @@ public class BubbleDialogue : MonoBehaviour
     [SerializeField] private SpriteRenderer _renderer;
     [SerializeField] private Sprite _sprite;
     [SerializeField] private Animator _animator;
+    [SerializeField] private bool _donnotDisable;
     private int _animatorParameter = Animator.StringToHash("Count");
 
     private bool _inProgress;
@@ -78,7 +79,10 @@ public class BubbleDialogue : MonoBehaviour
             IsCompleted = true;
             onDialogueEnd?.Invoke();
             _bubble.gameObject.SetActive(false);
-            gameObject.SetActive(false);
+            if (_donnotDisable)
+                Destroy(GetComponent<BoxCollider2D>());
+            else
+                gameObject.SetActive(false);
         }
     }
 
