@@ -25,6 +25,7 @@ public class Scenario : MonoBehaviour
     [Header("")]
     [SerializeField] private BubbleDialogue[] _carEvents;
     [SerializeField] private BubbleDialogue _bomjEvent;
+    [SerializeField] private GameObject _theEndTrigger;
 
     private bool _rememberedTrash;
     private bool _isTrashEventCompled;
@@ -69,7 +70,11 @@ public class Scenario : MonoBehaviour
         ActivateNextDialogue(_busStopEvents);
         ActivateNextDialogue(_carEvents);
 
-        if (_forgotBatteries.gameObject.activeSelf) _forgotBatteries.StartDialogue();
+        if (_forgotBatteries.gameObject.activeSelf)
+        {
+            _forgotBatteries.StartDialogue();
+            _theEndTrigger.SetActive(true);
+        }
     }
 
     private void OnShopVisited()
@@ -121,5 +126,10 @@ public class Scenario : MonoBehaviour
         {
             _bomjEvent.gameObject.SetActive(true);
         }
+    }
+
+    public void TheEnd()
+    {
+        FindObjectOfType<GameMenu>().ShowWinLose();
     }
 }
