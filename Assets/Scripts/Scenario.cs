@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Scenario : MonoBehaviour
@@ -23,6 +24,7 @@ public class Scenario : MonoBehaviour
     [SerializeField] private BubbleDialogue[] _busStopEvents;
     [Header("")]
     [SerializeField] private BubbleDialogue[] _carEvents;
+    [SerializeField] private BubbleDialogue _bomjEvent;
 
     private bool _rememberedTrash;
     private bool _isTrashEventCompled;
@@ -76,6 +78,8 @@ public class Scenario : MonoBehaviour
         _shopVisited = true;
         ActivateNextDialogue(_busStopEvents);
         ActivateNextDialogue(_carEvents);
+        ActivateNextDialogue(_cronesSpeeches);
+        //CheckBomj();
     }
 
     private void ActivateNextDialogue(BubbleDialogue[] dialogues)
@@ -111,5 +115,11 @@ public class Scenario : MonoBehaviour
         CameraFollow.instance.MoveRight();
     }
     #endregion
-
+    private void CheckBomj()
+    {
+        if (!_bomjEvent.IsCompleted && _cronesSpeeches.Count(s => !s.IsCompleted) == 0)
+        {
+            _bomjEvent.gameObject.SetActive(true);
+        }
+    }
 }
