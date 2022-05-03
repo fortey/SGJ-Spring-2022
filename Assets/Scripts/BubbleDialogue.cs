@@ -48,7 +48,7 @@ public class BubbleDialogue : MonoBehaviour
         _bubble.Setup(_lines[_index].bubbleSpot);
         // to do flip bubble
         _textComponent.text = _lines[_index].line;
-
+        SoundPlayer.Play(_lines[_index].clip);
         Invoke(nameof(NextLine), _textSpeed);
     }
 
@@ -85,5 +85,6 @@ public class SpeechLine
 {
 
     public Transform bubbleSpot;
+    public AudioClip clip;
     [TextArea(2, 10)] public string line;
 }
